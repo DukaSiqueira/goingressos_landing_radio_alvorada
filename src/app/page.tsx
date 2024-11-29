@@ -3,7 +3,6 @@ import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { BibleVerseSection } from "@/components/sections/BibleVerseSection";
 import { DonationOptionsSection } from "@/components/sections/DonationOptionsSection";
-import { DonateButtonSection } from "@/components/sections/DonateButtonSection";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { MassesAndRafflesSection } from "@/components/sections/MassesAndRafflesSection";

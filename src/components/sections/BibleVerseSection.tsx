@@ -7,12 +7,12 @@ export function BibleVerseSection() {
             <div className="space-y-1">
               <p className="text-xl md:text-2xl font-serif italic text-[#1f3c6c] relative">
                 <span className="text-4xl text-[#1f3c6c]/20 absolute -left-4 -top-4">
-                  "
+                  &quot;
                 </span>
                 E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda
                 criatura.
                 <span className="text-4xl text-[#1f3c6c]/20 absolute -right-4 -bottom-4">
-                  "
+                  &quot;
                 </span>
               </p>
               <footer className="text-base text-gray-600 font-medium pt-2">

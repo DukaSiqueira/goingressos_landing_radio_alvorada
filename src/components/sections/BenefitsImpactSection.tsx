@@ -1,4 +1,4 @@
-import { Heart, Star, Users, Church, Gift } from "lucide-react";
+import { Heart, Church, Gift } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 
 export function BenefitsImpactSection() {
