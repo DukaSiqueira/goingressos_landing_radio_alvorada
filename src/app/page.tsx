@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Gift, Church, Calendar, Phone } from "lucide-react";
-import logoRadio from "../assets/logo-radio.jpg";
+import logoRadio from "../assets/logo-radio.svg";
+import cloudSky from "../assets/cloudy-sky.jpg";
+import logo from "../assets/logo-radio(1).ico";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -22,16 +24,17 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="w-full bg-[#123e73] py-4">
+      <header className="w-full bg-[#1f3c6c] py-0">
         <div className="container mx-auto">
-          <div className="flex justify-center">
-            <div className="relative w-[300px] h-[150px]">
+          <div className="flex justify-start">
+            <div className="relative w-[150px] h-[80px]">
               <Image
-                src={logoRadio}
+                src={logo}
                 alt="Rádio Alvorada"
                 fill
                 className="object-contain"
                 priority
+                quality={100}
               />
             </div>
           </div>
@@ -39,11 +42,19 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="w-full py-6 md:py-12 lg:py-8 bg-gradient-to-b from-[#66c2ff] to-[#a5d8ff] relative overflow-hidden text-white">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cGF0aCBkPSJNMjggNjZMMCA1MEwwIDE2TDI4IDBMNTYgMTZMNTYgNTBMMjggNjZMMjggMTAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYxMCIgc3Ryb2tlLXdpZHRoPSIxIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZjEwIiBzdHJva2Utd2lkdGg9IjIiPjwvcGF0aD4KPC9zdmc+')] opacity-30"></div>
+      <section className="w-full py-6 md:py-12 lg:py-8 relative overflow-hidden text-white">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${cloudSky.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/50" />
         <div className="container px-4 md:px-6 mx-auto relative">
           <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl font-bold tracking-tight mb-6 text-shadow-lg">
+            <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl font-bold tracking-tight mb-6 [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%),_4px_4px_8px_rgb(0_0_0_/_30%)]">
               Participe do Clube do Ouvinte Coração Missionário e leve a
               mensagem de Deus ainda mais longe
             </h1>
@@ -56,6 +67,26 @@ export default function LandingPage() {
             <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d]">
               DOE AGORA
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Bible Verse Section */}
+      <section className="w-full py-2 bg-white">
+        <div className="container mx-auto px-2">
+          <div className="max-w-2xl mx-auto text-center">
+            <blockquote className="p-8 border-2 border-[#1f3c6c]/20 rounded-lg shadow-sm bg-gray-50/50">
+              <div className="space-y-1">
+                <p className="text-xl md:text-2xl font-serif italic text-[#1f3c6c] relative">
+                  <span className="text-4xl text-[#1f3c6c]/20 absolute -left-4 -top-4">"</span>
+                  E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda criatura.
+                  <span className="text-4xl text-[#1f3c6c]/20 absolute -right-4 -bottom-4">"</span>
+                </p>
+                <footer className="text-base text-gray-600 font-medium pt-2">
+                  — Marcos 16:15
+                </footer>
+              </div>
+            </blockquote>
           </div>
         </div>
       </section>
@@ -240,7 +271,7 @@ export default function LandingPage() {
             <div className="flex flex-col gap-4">
               <div className="relative w-[200px] h-[70px]">
                 <Image
-                  src="/logo-radio.jpg"
+                  src={logoRadio}
                   alt="Clube do Ouvinte Coração Missionário"
                   fill
                   className="object-contain"
