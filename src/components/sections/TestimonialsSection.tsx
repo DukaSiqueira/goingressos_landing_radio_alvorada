@@ -4,26 +4,11 @@ import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full py-16 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${cloudSky.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="container px-4 md:px-6 relative">
-        <div className="max-w-5xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Depoimentos e Histórias de Fé
-          </h2>
-          <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Essas são algumas histórias reais de fé e transformação de quem já faz parte do Clube do Ouvinte Coração Missionário.
-          </p>
-        </div>
-
+    <section className="w-full bg-[#0a1929] py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-white text-center mb-8">
+          Depoimentos e Histórias de Fé
+        </h2>
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white/95 backdrop-blur-sm border-none shadow-xl hover:shadow-2xl transition-all">

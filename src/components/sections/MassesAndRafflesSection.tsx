@@ -4,23 +4,12 @@ import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function MassesAndRafflesSection() {
   return (
-    <section className="w-full py-16 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${cloudSky.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 bg-black/60" />
-      <div className="container px-4 md:px-6 relative">
-        <div className="max-w-5xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
-            Missas e Sorteios
-          </h2>
-        </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <section className="w-full bg-[#0a1929] py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-white text-center mb-8">
+          Missas e Sorteios
+        </h2>
+        <div className="grid md:grid-cols-2 gap-6">
           <Card className="bg-white/95 backdrop-blur-sm border-none shadow-xl hover:shadow-2xl transition-all">
             <CardContent className="p-6 space-y-4">
               <div className="flex items-center gap-3 mb-4">

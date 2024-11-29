@@ -7,9 +7,9 @@ import {
 
 export function FaqSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-gray-50">
-      <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter text-center mb-8 text-[#123e73]">
+    <section className="w-full bg-white py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-[#123e73] text-center mb-8">
           Perguntas Frequentes
         </h2>
         <div className="max-w-[800px] mx-auto">

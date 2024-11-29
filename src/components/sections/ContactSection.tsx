@@ -3,13 +3,13 @@ import { Phone } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-white">
-      <div className="container px-4 md:px-6">
+    <section className="w-full bg-[#0a1929] py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-white text-center mb-8">
+          Entre em Contato
+        </h2>
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="space-y-4">
-            <h2 className="text-3xl font-bold tracking-tighter text-[#123e73]">
-              Entre em Contato
-            </h2>
             <p className="text-gray-500 md:text-lg text-[#123e73]">
               Tem dúvidas ou precisa de ajuda? Nossa equipe está pronta para
               atender você.

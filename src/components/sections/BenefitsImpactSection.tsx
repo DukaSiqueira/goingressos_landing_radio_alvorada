@@ -3,12 +3,12 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function BenefitsImpactSection() {
   return (
-    <section className="w-full py-16 bg-white">
-      <div className="container px-4 md:px-6">
+    <section className="w-full bg-white py-16">
+      <div className="max-w-6xl mx-auto px-4">
+        <h2 className="text-3xl font-bold text-[#123e73] text-center mb-8">
+          Benefícios de Ser um Ouvinte Coração Missionário
+        </h2>
         <div className="max-w-5xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#123e73]">
-            Benefícios de Ser um Ouvinte Coração Missionário
-          </h2>
           <p className="text-lg text-[#123e73]/80 max-w-3xl mx-auto">
             Ao fazer parte do Clube, você apoia a evangelização e ainda recebe benefícios exclusivos. Veja o que você ganha:
           </p>
