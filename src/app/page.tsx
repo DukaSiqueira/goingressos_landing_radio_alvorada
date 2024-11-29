@@ -6,6 +6,8 @@ import { DonationOptionsSection } from "@/components/sections/DonationOptionsSec
 import { DonateButtonSection } from "@/components/sections/DonateButtonSection";
 import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
+import { MassesAndRafflesSection } from "@/components/sections/MassesAndRafflesSection";
+import { BenefitsImpactSection } from "@/components/sections/BenefitsImpactSection";
 
 export default function LandingPage() {
   return (
@@ -15,6 +17,8 @@ export default function LandingPage() {
         <HeroSection />
         <BibleVerseSection />
         <DonationOptionsSection />
+        <MassesAndRafflesSection />
+        <BenefitsImpactSection />
         <DonateButtonSection />
         <FaqSection />
         <ContactSection />
