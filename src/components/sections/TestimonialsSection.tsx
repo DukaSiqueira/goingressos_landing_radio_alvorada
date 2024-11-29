@@ -4,8 +4,20 @@ import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function TestimonialsSection() {
   return (
-    <section className="w-full bg-[#0a1929] py-16">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="w-full py-16 relative overflow-hidden">
+      {/* Background com overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url(${cloudSky.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* Conteúdo */}
+      <div className="max-w-6xl mx-auto px-4 relative">
         <h2 className="text-3xl font-bold text-white text-center mb-8">
           Depoimentos e Histórias de Fé
         </h2>

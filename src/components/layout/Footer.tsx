@@ -5,7 +5,7 @@ import logoRadio from "@/assets/logo-radio.svg";
 export function Footer() {
   return (
     <footer className="w-full py-6 bg-[#0f0f0f] text-white">
-      <div className="container px-4 md:px-6">
+      <div className="max-w-6xl mx-auto px-4">
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="flex flex-col gap-4">
             <div className="relative w-[200px] h-[70px]">
