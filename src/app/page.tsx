@@ -25,8 +25,8 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen">
       {/* Header */}
       <header className="w-full bg-[#1f3c6c] py-0">
-        <div className="container mx-auto">
-          <div className="flex justify-start">
+        <div className="container mx-auto px-4">
+          <div className="flex justify-between items-center">
             <div className="relative w-[150px] h-[80px]">
               <Image
                 src={logo}
@@ -37,13 +37,25 @@ export default function LandingPage() {
                 quality={100}
               />
             </div>
+
+            {/* WhatsApp contact */}
+            <div className="flex items-center gap-2 text-white pr-4">
+              <Phone className="h-5 w-5" />
+              <Link
+                href="https://wa.me/5543991400629"
+                className="hover:underline"
+                target="_blank"
+              >
+                (43) 99140-0629
+              </Link>
+            </div>
           </div>
         </div>
       </header>
 
       {/* Hero Section */}
       <section className="w-full py-6 md:py-12 lg:py-8 relative overflow-hidden text-white">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: `url(${cloudSky.src})`,
@@ -56,13 +68,13 @@ export default function LandingPage() {
           <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
             <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl font-bold tracking-tight mb-6 [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%),_4px_4px_8px_rgb(0_0_0_/_30%)]">
               Participe do Clube do Ouvinte Coração Missionário e leve a
-              mensagem de Deus ainda mais longe
+              mensagem de Deus ainda mais longe!
             </h1>
             <p className="text-[#f2f2f2] md:text-xl mb-8 max-w-3xl font-medium">
               Sua contribuição ajuda a Rádio Alvorada a espalhar fé, esperança e
               amor para milhares de famílias. Juntos, podemos transformar vidas
               e fortalecer nossa missão de evangelizar. Faça parte desta obra de
-              Deus!!
+              Deus!
             </p>
             <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d]">
               DOE AGORA
@@ -78,9 +90,14 @@ export default function LandingPage() {
             <blockquote className="p-8 border-2 border-[#1f3c6c]/20 rounded-lg shadow-sm bg-gray-50/50">
               <div className="space-y-1">
                 <p className="text-xl md:text-2xl font-serif italic text-[#1f3c6c] relative">
-                  <span className="text-4xl text-[#1f3c6c]/20 absolute -left-4 -top-4">"</span>
-                  E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda criatura.
-                  <span className="text-4xl text-[#1f3c6c]/20 absolute -right-4 -bottom-4">"</span>
+                  <span className="text-4xl text-[#1f3c6c]/20 absolute -left-4 -top-4">
+                    "
+                  </span>
+                  E disse-lhes: Ide por todo o mundo, pregai o evangelho a toda
+                  criatura.
+                  <span className="text-4xl text-[#1f3c6c]/20 absolute -right-4 -bottom-4">
+                    "
+                  </span>
                 </p>
                 <footer className="text-base text-gray-600 font-medium pt-2">
                   — Marcos 16:15
@@ -92,7 +109,7 @@ export default function LandingPage() {
       </section>
 
       {/* Donation Options */}
-      <section className="w-full py-12 md:py-24 bg-white">
+      <section className="w-full py-12 md:py-4 bg-white">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-4">
@@ -187,6 +204,26 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Botão centralizado */}
+      <section className="w-full py-12 relative overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url(${cloudSky.src})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="container px-4 md:px-6 mx-auto relative">
+          <div className="flex justify-center">
+            <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d] text-xl px-8 py-6">
+              DOE AGORA E TRANSFORME VIDAS
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="w-full py-12 md:py-24 bg-gray-50">
         <div className="container px-4 md:px-6">
@@ -210,9 +247,8 @@ export default function LandingPage() {
                   Posso ajustar ou cancelar minha doação?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#123e73]">
-                  Sim, você pode ajustar o valor ou cancelar a qualquer
-                  momento. Basta entrar em contato conosco pelo WhatsApp (43)
-                  99140-0629.
+                  Sim, você pode ajustar o valor ou cancelar a qualquer momento.
+                  Basta entrar em contato conosco pelo WhatsApp (43) 99140-0629.
                 </AccordionContent>
               </AccordionItem>
               <AccordionItem value="item-3">
@@ -229,8 +265,8 @@ export default function LandingPage() {
                   Como são realizados os sorteios?
                 </AccordionTrigger>
                 <AccordionContent className="text-[#123e73]">
-                  Os sorteios são feitos mensalmente e incluem prêmios
-                  especiais para membros do Clube.
+                  Os sorteios são feitos mensalmente e incluem prêmios especiais
+                  para membros do Clube.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
