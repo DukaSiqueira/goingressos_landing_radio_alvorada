@@ -75,8 +75,8 @@ interface BenefitCardProps {
 
 function BenefitCard({ icon, title, description }: BenefitCardProps) {
   return (
-    <Card>
-      <CardHeader>
+    <Card className="transition-all duration-300 transform hover:scale-105 hover:shadow-xl cursor-pointer group perspective">
+      <CardHeader className="group-hover:animate-flip-h">
         <CardTitle className="flex items-center gap-2 text-[#123e73]">
           {icon}
           {title}
