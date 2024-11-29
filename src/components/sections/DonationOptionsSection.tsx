@@ -50,6 +50,13 @@ export function DonationOptionsSection() {
             </div>
           </div>
         </div>
+
+        {/* Botão de Doação */}
+        <div className="mt-16 mb-8 flex justify-center">
+          <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d] text-xl px-8 py-6 text-white">
+            DOE AGORA E TRANSFORME VIDAS
+          </Button>
+        </div>
       </div>
     </section>
   );
