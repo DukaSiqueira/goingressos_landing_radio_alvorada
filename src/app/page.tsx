@@ -8,6 +8,7 @@ import { FaqSection } from "@/components/sections/FaqSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { MassesAndRafflesSection } from "@/components/sections/MassesAndRafflesSection";
 import { BenefitsImpactSection } from "@/components/sections/BenefitsImpactSection";
+import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 export default function LandingPage() {
   return (
@@ -19,7 +20,7 @@ export default function LandingPage() {
         <DonationOptionsSection />
         <MassesAndRafflesSection />
         <BenefitsImpactSection />
-        <DonateButtonSection />
+        <TestimonialsSection />
         <FaqSection />
         <ContactSection />
       </main>
