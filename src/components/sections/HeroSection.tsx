@@ -25,9 +25,14 @@ export function HeroSection() {
             e fortalecer nossa missão de evangelizar. Faça parte desta obra de
             Deus!
           </p>
-          <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d]">
+          <a
+            href={`${process.env.NEXT_PUBLIC_API_URL}/acesso/login-alvorada`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-8 bg-[#123e73] hover:bg-[#17365d] text-white"
+          >
             DOE AGORA
-          </Button>
+          </a>
         </div>
       </div>
     </section>
