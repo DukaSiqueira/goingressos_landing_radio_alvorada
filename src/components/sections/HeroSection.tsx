@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function HeroSection() {
@@ -26,7 +25,7 @@ export function HeroSection() {
             Deus!
           </p>
           <a
-            href={`${process.env.NEXT_PUBLIC_API_URL}/acesso/login-alvorada`}
+            href={`https://www.goingressos.com.br/acesso/login-alvorada`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-8 bg-[#123e73] hover:bg-[#17365d] text-white"
