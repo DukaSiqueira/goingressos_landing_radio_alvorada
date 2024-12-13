@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function DonateButtonSection() {

@@ -5,7 +5,6 @@ import {
   CardTitle,
   CardDescription,
 } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Calendar, Church, Gift, Package } from "lucide-react";
 import { PaymentMethods } from "../ui/PaymentMethods";
 
