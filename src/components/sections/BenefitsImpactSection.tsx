@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export function BenefitsImpactSection() {
   return (
-    <section className="w-full bg-white py-16">
+    <section id="benefits-impact" className="w-full bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-[#123e73] text-center mb-8">
           Benefícios de Ser um Ouvinte Coração Missionário
@@ -35,11 +35,13 @@ export function BenefitsImpactSection() {
         <div className="text-center max-w-3xl mx-auto mb-16 bg-gray-50 p-6 rounded-lg">
           <div className="flex items-center justify-center mb-3">
             <Package className="h-6 w-6 text-[#123e73] mr-2" />
-            <span className="text-xl font-semibold text-[#123e73]">Cesta de Produtos Religiosos</span>
+            <span className="text-xl font-semibold text-[#123e73]">
+              Cesta Mensal
+            </span>
           </div>
           <p className="text-[#123e73]/80">
-            Sorteio mensal de uma cesta com produtos e artigos religiosos da livraria Livros e Livros 
-            no valor aproximado de R$ 500,00.
+            Sorteio mensal de uma cesta com produtos e artigos religiosos da
+            livraria Livros e Livros no valor aproximado de R$ 500,00.
           </p>
         </div>
 
@@ -49,7 +51,8 @@ export function BenefitsImpactSection() {
           </h3>
           <p className="text-[#123e73] leading-relaxed text-center">
             Veja como sua contribuição faz a diferença! Conheça histórias
-            emocionantes de ouvintes que foram tocados por nossa missão e
+            emocionantes de ouvintes que foram impactados pela evangelização
+            promovida por meio da Rádio Alvorada e também de pessoas que
             participaram de eventos e sorteios inesquecíveis, como a viagem ao
             Santuário de Aparecida.
           </p>

@@ -7,7 +7,7 @@ import {
 
 export function FaqSection() {
   return (
-    <section className="w-full bg-white py-16">
+    <section id="faq-section" className="w-full bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-[#123e73] text-center mb-8">
           Perguntas Frequentes
@@ -48,7 +48,7 @@ export function FaqSection() {
               </AccordionTrigger>
               <AccordionContent className="text-[#123e73]">
                 Os sorteios são feitos mensalmente e incluem prêmios especiais
-                para membros do Clube.
+                para membros do Clube do Ouvinte Coração Missionário.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
@@ -56,4 +56,4 @@ export function FaqSection() {
       </div>
     </section>
   );
-} 
+}

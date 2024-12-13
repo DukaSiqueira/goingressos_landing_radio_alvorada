@@ -1,45 +1,103 @@
 import Link from "next/link";
-import Image from "next/image";
-import logoRadio from "@/assets/logo-radio.svg";
+import { Phone } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="w-full py-6 bg-[#0f0f0f] text-white">
+    <footer className="w-full py-12 bg-[#123e73] text-white">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid gap-8 lg:grid-cols-2">
-          <div className="flex flex-col gap-4">
-            <div className="relative w-[200px] h-[70px]">
-              <Image
-                src={logoRadio}
-                alt="Clube do Ouvinte Coração Missionário"
-                fill
-                className="object-contain"
-              />
+        <div className="grid gap-8 md:grid-cols-3">
+          {/* Links Rápidos */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Links Rápidos</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link 
+                  href="https://www.goingressos.com.br/acesso/login-alvorada"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Doação
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="#benefits-impact" 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Benefícios
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="#faq-section" 
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  FAQ
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  href="https://wa.me/5543991400629"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/80 hover:text-white transition-colors"
+                >
+                  Contato
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contato */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Entre em Contato</h3>
+            <p className="text-white/80 mb-4">
+              Tem dúvidas ou precisa de ajuda? Nossa equipe está pronta para
+              atender você.
+            </p>
+            <div className="flex items-center gap-2">
+              <Phone className="h-5 w-5 text-white/80" />
+              <Link
+                href="https://wa.me/5543991400629"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-white transition-colors"
+              >
+                WhatsApp: (43) 99140-0629
+              </Link>
             </div>
           </div>
-          <div className="grid gap-4 text-sm">
-            <div className="grid grid-cols-2 gap-4">
-              <div>
-                <h3 className="font-semibold mb-2">Links Rápidos</h3>
-                <ul className="space-y-2">
-                  <li><Link href="#" className="hover:text-red-400">Doação</Link></li>
-                  <li><Link href="#" className="hover:text-red-400">Benefícios</Link></li>
-                  <li><Link href="#" className="hover:text-red-400">FAQ</Link></li>
-                  <li><Link href="#" className="hover:text-red-400">Contato</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Legal</h3>
-                <ul className="space-y-2">
-                  <li><Link href="#" className="hover:text-red-400">Política de Privacidade</Link></li>
-                  <li><Link href="#" className="hover:text-red-400">Termos de Uso</Link></li>
-                </ul>
-              </div>
-            </div>
+
+          {/* Política de Privacidade */}
+          <div>
+            <h3 className="text-xl font-semibold mb-4">Política de Privacidade e Termos de Uso</h3>
+            <p className="text-white/80">
+              A Rádio Alvorada respeita sua privacidade. Leia nossa{" "}
+              <Link 
+                href="/privacidade" 
+                className="underline hover:text-white transition-colors"
+              >
+                Política de Privacidade
+              </Link>{" "}
+              e nossos{" "}
+              <Link 
+                href="/termos" 
+                className="underline hover:text-white transition-colors"
+              >
+                Termos de Uso
+              </Link>{" "}
+              para saber mais.
+            </p>
           </div>
         </div>
-        <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm">
-          <p>© 2024 Rádio Alvorada. Todos os direitos reservados.</p>
+
+        {/* Frase Inspiradora */}
+        <div className="mt-8 pt-8 border-t border-white/10">
+          <p className="text-center text-white/90 max-w-3xl mx-auto">
+            Quem contribui com a evangelização tem os mesmos méritos de um evangelizador! 
+            Deus ama quem dá com alegria! Junte-se a nós, evangelize conosco através da sua doação!
+          </p>
         </div>
       </div>
     </footer>

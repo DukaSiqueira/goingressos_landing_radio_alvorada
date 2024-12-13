@@ -11,7 +11,7 @@ import { PaymentMethods } from "../ui/PaymentMethods";
 
 export function DonationOptionsSection() {
   return (
-    <section className="py-16 bg-white">
+    <section id="donation-options" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">

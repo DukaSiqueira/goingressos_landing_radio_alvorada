@@ -4,7 +4,6 @@ import { HeroSection } from "@/components/sections/HeroSection";
 import { BibleVerseSection } from "@/components/sections/BibleVerseSection";
 import { DonationOptionsSection } from "@/components/sections/DonationOptionsSection";
 import { FaqSection } from "@/components/sections/FaqSection";
-import { ContactSection } from "@/components/sections/ContactSection";
 import { MassesAndRafflesSection } from "@/components/sections/MassesAndRafflesSection";
 import { BenefitsImpactSection } from "@/components/sections/BenefitsImpactSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
@@ -21,7 +20,6 @@ export default function LandingPage() {
         <BenefitsImpactSection />
         <TestimonialsSection />
         <FaqSection />
-        <ContactSection />
       </main>
       <Footer />
     </div>
