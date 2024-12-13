@@ -6,7 +6,7 @@ import {
   CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Church, Gift } from "lucide-react";
+import { Calendar, Church, Gift, Package } from "lucide-react";
 import { PaymentMethods } from "../ui/PaymentMethods";
 
 export function DonationOptionsSection() {
@@ -47,17 +47,22 @@ export function DonationOptionsSection() {
               <BenefitCard
                 icon={<Calendar className="h-5 w-5 text-[#123e73]" />}
                 title="Aniversariantes do Mês"
-                description="Sorteio mensal de um bolo para aniversariantes do mês."
+                description="Sorteio de um bolo para aniversariantes do mês."
               />
               <BenefitCard
                 icon={<Church className="h-5 w-5 text-[#123e73]" />}
                 title="Missas Mensais"
-                description="Missas especiais mensais celebradas pelo Pe. Luís Senegali."
+                description="Missas mensais presididas pelo Pe. Luiz Senigalia."
               />
               <BenefitCard
                 icon={<Gift className="h-5 w-5 text-[#123e73]" />}
                 title="Sorteios de Viagens"
-                description="Concorrência a viagens exclusivas para o Santuário Nacional e outros locais prêmios incríveis."
+                description="Sorteios de viagens exclusivas para o Santuário Nacional e outros prêmios incríveis."
+              />
+              <BenefitCard
+                icon={<Package className="h-5 w-5 text-[#123e73]" />}
+                title="Cesta Mensal"
+                description="Sorteio mensal de uma cesta com produtos e artigos religiosos da livraria Livros e Livros no valor aproximado de R$ 500,00."
               />
             </div>
           </div>
