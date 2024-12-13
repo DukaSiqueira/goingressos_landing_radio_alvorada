@@ -15,14 +15,13 @@ export function HeroSection() {
       <div className="container px-4 md:px-6 mx-auto relative">
         <div className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-4xl md:text-4xl lg:text-6xl font-bold tracking-tight mb-6 [text-shadow:_2px_2px_4px_rgb(0_0_0_/_50%),_4px_4px_8px_rgb(0_0_0_/_30%)]">
-            Participe do Clube do Ouvinte Coração Missionário e leve a
-            mensagem de Deus ainda mais longe!
+            Faça parte do Clube do Ouvinte Coração Missionário e ajude a Palavra
+            de Deus cada vez mais longe, a mais lares e corações!
           </h1>
           <p className="text-[#f2f2f2] md:text-xl mb-8 max-w-3xl font-medium">
-            Sua contribuição ajuda a Rádio Alvorada a espalhar fé, esperança e
-            amor para milhares de famílias. Juntos, podemos transformar vidas
-            e fortalecer nossa missão de evangelizar. Faça parte desta obra de
-            Deus!
+            Sua contribuição ajuda a Rádio Alvorada a espalhar fé, a esperança e
+            o amor para milhares de famílias.Seja um evangelizador conosco,
+            através da sua doação!
           </p>
           <a
             href={`https://www.goingressos.com.br/acesso/login-alvorada`}
@@ -36,4 +35,4 @@ export function HeroSection() {
       </div>
     </section>
   );
-} 
+}

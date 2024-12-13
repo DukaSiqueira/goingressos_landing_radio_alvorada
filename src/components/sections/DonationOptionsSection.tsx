@@ -1,5 +1,10 @@
 import { DonationCard } from "@/components/ui/DonationCard";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Church, Gift } from "lucide-react";
 
@@ -10,17 +15,22 @@ export function DonationOptionsSection() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
             <h2 className="text-3xl font-bold tracking-tighter text-[#123e73]">
-              Escolha sua forma de contribuição e seja um pilar desta missão
-              de evangelização.
+              Quem contribui com a evangelização tem os mesmos méritos de um
+              evangelizador!” Escolha sua forma de contribuição!
             </h2>
             <p className="text-gray-500 md:text-lg text-[#123e73]">
-              Oferecemos várias opções de valores para que você possa
-              participar conforme sua possibilidade. Toda doação é importante!
+              Oferecemos várias opções de valores para que você possa participar
+              conforme suas condições. Toda doação é importante!
             </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <DonationCard value={15} />
-              <DonationCard value={30} />
-              <DonationCard value={50} />
+            <div className="space-y-4">
+              <div className="flex flex-wrap justify-center gap-4">
+                <DonationCard value={15} />
+                <DonationCard value={30} />
+                <DonationCard value={50} />
+              </div>
+              <p className="text-center text-lg font-medium text-[#123e73]">
+                Ou personalize seu valor
+              </p>
             </div>
           </div>
           <div className="space-y-4">
@@ -53,7 +63,10 @@ export function DonationOptionsSection() {
 
         {/* Botão de Doação */}
         <div className="mt-16 mb-8 flex justify-center">
-          <Button size="lg" className="bg-[#123e73] hover:bg-[#17365d] text-xl px-8 py-6 text-white">
+          <Button
+            size="lg"
+            className="bg-[#123e73] hover:bg-[#17365d] text-xl px-8 py-6 text-white"
+          >
             DOE AGORA E TRANSFORME VIDAS
           </Button>
         </div>
@@ -82,4 +95,4 @@ function BenefitCard({ icon, title, description }: BenefitCardProps) {
       </CardHeader>
     </Card>
   );
-} 
+}
