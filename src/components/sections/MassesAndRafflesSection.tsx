@@ -6,7 +6,7 @@ export function MassesAndRafflesSection() {
   return (
     <section className="w-full py-16 relative overflow-hidden">
       {/* Background com overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${cloudSky.src})`,
@@ -26,10 +26,16 @@ export function MassesAndRafflesSection() {
             <CardContent className="p-6 space-y-4">
               <div className="flex items-center gap-3 mb-4">
                 <Church className="h-8 w-8 text-[#123e73]" />
-                <h3 className="text-2xl font-bold text-[#123e73]">Missas Mensais</h3>
+                <h3 className="text-2xl font-bold text-[#123e73]">
+                  Missas Mensais
+                </h3>
               </div>
               <p className="text-[#123e73] leading-relaxed">
-                Como membro do Clube do Ouvinte Coração Missionário, você é convidado para momentos de fé e gratidão. Participe das nossas missas mensais exclusivas, celebradas pelo Pe. Luís Senegali, e leve seus pedidos e intenções ao altar do Senhor.
+                Como membro do Clube do Ouvinte Coração Missionário, você é
+                convidado a rezar conosco pelas intenções do seu coração, pela
+                Rádio Alvorada e por sua família! Participe das nossas missas
+                mensais, presididas pelo Pe. Luiz Senigalia e celebre a alegria
+                de ser um evangelizador junto com a Rádio Alvorada.
               </p>
             </CardContent>
           </Card>
@@ -41,7 +47,10 @@ export function MassesAndRafflesSection() {
                 <h3 className="text-2xl font-bold text-[#123e73]">Sorteios</h3>
               </div>
               <p className="text-[#123e73] leading-relaxed">
-                Com sua fidelidade, você concorre mensalmente a viagens especiais e prêmios exclusivos, como uma visita ao Santuário de Aparecida. Seja parte desta obra e viva experiências inesquecíveis!
+                Com sua fidelidade, você concorre mensalmente a viagens
+                especiais e prêmios exclusivos, como uma visita ao Santuário de
+                Aparecida. Seja parte desta obra e viva experiências
+                inesquecíveis!
               </p>
             </CardContent>
           </Card>
@@ -49,4 +58,4 @@ export function MassesAndRafflesSection() {
       </div>
     </section>
   );
-} 
+}
