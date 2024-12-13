@@ -43,16 +43,16 @@ const benefits = [
   {
     icon: <Gift className="h-8 w-8 text-[#123e73] mx-auto" />,
     title: "Sorteios Exclusivos",
-    description: "Participe de sorteios de viagens e prêmios exclusivos mensalmente."
+    description: "Sorteios de viagens exclusivas para o Santuário Nacional e outros prêmios incríveis."
   },
   {
     icon: <Church className="h-8 w-8 text-[#123e73] mx-auto" />,
     title: "Missas e Bênçãos",
-    description: "Receba convites para missas e bênçãos mensais especiais."
+    description: "Missas mensais presididas pelo Pe. Luiz Senigalia."
   },
   {
     icon: <Heart className="h-8 w-8 text-[#123e73] mx-auto" />,
     title: "Bolo de Aniversário",
-    description: "Concorra a um bolo especial no mês do seu aniversário."
+    description: "Sorteio de um bolo para aniversariantes do mês."
   }
 ]; 

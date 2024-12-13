@@ -7,10 +7,11 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Calendar, Church, Gift } from "lucide-react";
+import { PaymentMethods } from "../ui/PaymentMethods";
 
 export function DonationOptionsSection() {
   return (
-    <section className="w-full bg-white">
+    <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
           <div className="space-y-4">
@@ -32,6 +33,7 @@ export function DonationOptionsSection() {
                 Ou personalize seu valor
               </p>
             </div>
+            <PaymentMethods />
           </div>
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-[#123e73]">
@@ -63,12 +65,14 @@ export function DonationOptionsSection() {
 
         {/* Botão de Doação */}
         <div className="mt-16 mb-8 flex justify-center">
-          <Button
-            size="lg"
-            className="bg-[#123e73] hover:bg-[#17365d] text-xl px-8 py-6 text-white"
+          <a
+            href={`https://www.goingressos.com.br/acesso/login-alvorada`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-8 bg-[#123e73] hover:bg-[#17365d] text-white"
           >
             DOE AGORA E TRANSFORME VIDAS
-          </Button>
+          </a>
         </div>
       </div>
     </section>
