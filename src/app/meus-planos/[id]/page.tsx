@@ -3,8 +3,7 @@ import Navbar from "@/components/layout/Navbar";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { translate } from "@/utils/translate";
-import { ChevronLeft, Trash } from "lucide-react";
-import Link from "next/link";
+import { Trash } from "lucide-react";
 import { notFound, usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
@@ -40,7 +39,7 @@ const SubscribeDetails = () => {
       console.error("No auth token found");
       setLoading(false);
     }
-  }, []);
+  }, [path]);
 
   const handleCancelSubscription = async () => {
     const confirmacao = await Swal.fire({
@@ -59,7 +58,7 @@ const SubscribeDetails = () => {
         const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/subscriptions/${id}/cancel`, {
           method: "POST",
           headers: {
-            "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY,
+            "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY || "",
           },
         });
         

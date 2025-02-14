@@ -1,7 +1,5 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
 import PaymentModal from "../modal/PaymentModal";
-import { useState } from "react";
 import { translate } from "@/utils/translate";
 
 const PlanCard = ({ plan }: { plan: PlansResponse }) => {

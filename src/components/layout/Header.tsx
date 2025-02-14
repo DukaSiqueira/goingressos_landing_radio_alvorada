@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Phone } from "lucide-react";
 import radioLogo from "public/assets/logo-radio(1).ico";
-import clubeLogo from "public/assets/logo-clube.jpg";
 
 export function Header() {
   return (

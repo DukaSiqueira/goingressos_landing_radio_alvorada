@@ -25,7 +25,7 @@ const RegisterForm = () => {
         return alert("Email inválido");
       }
 
-      const res: RegisterResponse = await fetch(
+      await fetch(
         `${process.env.NEXT_PUBLIC_API_URL}/auth/register`,
         {
           method: "POST",

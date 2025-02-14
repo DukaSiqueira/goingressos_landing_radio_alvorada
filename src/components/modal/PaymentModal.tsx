@@ -45,7 +45,7 @@ const PaymentDialog = ({ plan }: { plan: PlansResponse }) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY,
+          "X-API-KEY": process.env.NEXT_PUBLIC_API_KEY || "",
         },
         body: JSON.stringify({
           preapproval_plan_id: plan.id,

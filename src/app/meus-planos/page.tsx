@@ -47,7 +47,7 @@ const MeusPlanos = () => {
   );
 };
 
-export const getPlans = async (
+const getPlans = async (
   token: string
 ): Promise<Array<{ plan: PlansResponse; subscription: Subscription }>> => {
   const res = await fetch(
