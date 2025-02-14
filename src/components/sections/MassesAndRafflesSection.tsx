@@ -1,6 +1,5 @@
 import { Church, Gift } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function MassesAndRafflesSection() {
   return (
@@ -9,7 +8,7 @@ export function MassesAndRafflesSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${cloudSky.src})`,
+          backgroundImage: `url('/assets/cloudy-sky.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

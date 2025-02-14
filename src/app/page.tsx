@@ -1,5 +1,3 @@
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { BibleVerseSection } from "@/components/sections/BibleVerseSection";
 import { DonationOptionsSection } from "@/components/sections/DonationOptionsSection";
@@ -10,9 +8,7 @@ import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-screen bg-white">
-      <Header />
-      <main>
+    <div>
         <HeroSection />
         <BibleVerseSection />
         <DonationOptionsSection />
@@ -20,8 +16,6 @@ export default function LandingPage() {
         <BenefitsImpactSection />
         <TestimonialsSection />
         <FaqSection />
-      </main>
-      <Footer />
     </div>
   );
 }

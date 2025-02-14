@@ -1,4 +1,3 @@
-import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function HeroSection() {
   return (
@@ -6,7 +5,7 @@ export function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${cloudSky.src})`,
+          backgroundImage: `url('/assets/cloudy-sky.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -24,8 +23,7 @@ export function HeroSection() {
             através da sua doação!
           </p>
           <a
-            href={`https://www.goingressos.com.br/acesso/login-alvorada`}
-            target="_blank"
+            href={`/login`}
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-8 bg-[#123e73] hover:bg-[#17365d] text-white"
           >

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import radioIcon from "@/assets/radio.svg";
+import radioIcon from "public/assets/radio.svg";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
   title: "Clube do Ouvinte Coração Missionário",
@@ -25,9 +27,18 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="icon" href={radioIcon.src} type="image/svg+xml" sizes="any" />
+        <link
+          rel="icon"
+          href={radioIcon.src}
+          type="image/svg+xml"
+          sizes="any"
+        />
       </head>
-      <body>{children}</body>
+      <body>
+        <Header />
+        <main className="flex flex-col min-h-screen bg-white">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

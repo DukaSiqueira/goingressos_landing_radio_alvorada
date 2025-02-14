@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone } from "lucide-react";
-import radioLogo from "@/assets/logo-radio(1).ico";
-import clubeLogo from "@/assets/logo-clube.jpg";
+import radioLogo from "public/assets/logo-radio(1).ico";
+import clubeLogo from "public/assets/logo-clube.jpg";
 
 export function Header() {
   return (
@@ -10,7 +10,7 @@ export function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo Rádio */}
-          <div className="relative w-[150px] h-[80px]">
+          <div className="relative w-1/12 h-20">
             <Image
               src={radioLogo}
               alt="Rádio Alvorada"
@@ -21,17 +21,7 @@ export function Header() {
             />
           </div>
 
-          {/* Logo Clube do Ouvinte */}
-          <div className="flex-1 flex justify-center">
-            <Image
-              src={clubeLogo.src}
-              alt="Logo Clube do Ouvinte"
-              width={160}
-              height={110}
-              className="object-contain rounded-lg"
-              priority
-            />
-          </div>
+          
 
           {/* Telefone */}
           <div className="flex items-center gap-2 text-white pr-4">
