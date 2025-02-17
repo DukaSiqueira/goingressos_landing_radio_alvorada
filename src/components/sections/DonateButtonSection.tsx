@@ -1,4 +1,3 @@
-import cloudSky from "@/assets/cloudy-sky.jpg";
 
 export function DonateButtonSection() {
   return (
@@ -6,7 +5,7 @@ export function DonateButtonSection() {
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${cloudSky.src})`,
+          backgroundImage: `url('/assets/cloudy-sky.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

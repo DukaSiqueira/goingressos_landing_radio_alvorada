@@ -1,7 +1,5 @@
 import { Quote, Camera, Heart } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import cloudSky from "@/assets/cloudy-sky.jpg";
-
 export function TestimonialsSection() {
   return (
     <section id="testimonials" className="w-full py-16 relative overflow-hidden">
@@ -9,7 +7,7 @@ export function TestimonialsSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${cloudSky.src})`,
+          backgroundImage: `url('/assets/cloudy-sky.jpg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
